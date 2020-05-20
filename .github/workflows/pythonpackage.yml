@@ -29,7 +29,5 @@ jobs:
         if [ -f requirements.txt ]; then pip install -r requirements.txt; fi
     - name: cd into project dir
       run: cd github_actions
-    - name: Run migrations
-      run: python manage.py migrate
-    - name: Run tests
-      run: python manage.py test
+    - name: list directory contents
+      run: ls -a
