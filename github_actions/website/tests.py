@@ -7,7 +7,7 @@ class WebsiteTests(TestCase):
         self.page = Page.objects.create(name="Test Page", slug="test-page")
 
     def test_page_is_created(self):
-        self.assertTrue(page)
+        self.assertTrue(self.page)
 
     def test_page_slug_matches_expectation(self):
         self.assertTrue(self.page.slug == 'test-page')
