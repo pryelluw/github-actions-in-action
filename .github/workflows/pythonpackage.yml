@@ -32,5 +32,5 @@ jobs:
     - name: migrate app
       run: python github_actions/manage.py migrate
     - name: run tests
-      run: python github_actions/manage.py test website -vvv
+      run: python github_actions/manage.py test website -v=3
     
