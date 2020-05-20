@@ -3,7 +3,7 @@ from website.models import Page
 
 
 class WebsiteTests(TestCase):
-   def setUp(self):
+    def setUp(self):
         self.page = Page.objects.create(name="Test Page", slug="test-page")
 
     def test_page_is_created(self):
